@@ -5,7 +5,7 @@ const WS_SERVER = (function(){
   try {
     if (location.protocol === 'https:') return 'wss://' + location.host + '/';
     return 'ws://' + location.host + '/';
-  } catch(e){ return 'ws://localhost:3000'; }
+  } catch(e){ return 'ws://mancala-web-rouge.vercel.app'; }
 })();
 
 let ws = null;
