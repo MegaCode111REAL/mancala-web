@@ -129,7 +129,7 @@ function sow(startIdx){
 }
 
 // buttons
-document.getElementById('rulesBtn').addEventListener('click', ()=>{ showModal('<h2>Rules</h2><div class="small"><ol><li>7 pits per side, each with 7 seeds initially.</li><li>Pick one pit from your side, sow seeds counter-clockwise.</li><li>If last seed in your store, take another turn (not implemented in simple rules).</li></ol></div><div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="closeModal()">Close</button></div>'); });
+document.getElementById('rulesBtn').addEventListener('click', ()=>{ showModal('<h2>Southeast Asia Mancala (Sungka/Congkak) Rules</h2><div class="small"><ol><li>Objective: The goal is to capture more stones in your home store (the large pit on your right) than your opponent.</li><li>Gameplay: Players take turns selecting all the stones from one of their own pits and distributing them counter-clockwise, one by one. If the last stone you drop lands in an *empty* pit on your side of the board, you capture that single stone *plus* all the stones in the opposite opponent\'s pit.</li><li>Game End: The game ends when all six pits on one player\'s side are empty. The player with the most stones in their store wins.</li></ol></div><div style="display:flex;gap:8px;margin-top:12px"><button class="btn" onclick="closeModal()">Close</button></div>'); });
 document.getElementById('resetBtn').addEventListener('click', ()=>{ state = makeBoard(); renderBoard(); });
 document.getElementById('multBtn').addEventListener('click', ()=>{ ensureWS(); openMultiplayer(); });
 
